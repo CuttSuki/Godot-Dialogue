@@ -33,6 +33,6 @@ func _process(delta):
 								array.erase(i)
 						if array.size() >0:
 							if is_instance_valid(array[0]):
-								array[0].canInteract = true
 								if Input.is_action_just_pressed("ui_accept"):
+									array[0].canInteract = true
 									array[0].showDialogue()
